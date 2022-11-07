@@ -25,11 +25,13 @@ function calculate() {
         $amountTwo.value = (+($amountOne === null || $amountOne === void 0 ? void 0 : $amountOne.value) * rate).toFixed(2);
     });
 }
+
 // Event listeners
 $currencyOne.addEventListener('change', calculate);
 $currencyTwo.addEventListener('change', calculate);
 $amountOne.addEventListener('input', calculate);
 $amountTwo.addEventListener('input', calculate);
+
 // swap 버튼 클릭 시 통화 서로 변경
 $swap.addEventListener('click', function () {
     var temp = $currencyOne.value;
