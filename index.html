@@ -5,17 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript 20</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background: #333;
+        color: white;
+      }
+
+      .title {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .sub-title {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .card-ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 40px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+
+      .card-ul > li {
+        background: white;
+        border-radius: 8px;
+        padding: 20px 16px;
+        transform: translateY(0);
+        transition: 0.3s all;
+      }
+
+      .card-ul > li:hover {
+        transform: translateY(-10px);
+      }
+
+      .card-ul > li > a {
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .card-ul > li > a > p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .img-container {
+        width: 100%;
+        height: 200px;
+        padding: 14px;
+        box-sizing: border-box;
+        background-color: #dedede;
+      }
+
+      .img-container > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media (max-width: 1023px) {
+        .card-ul {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .card-ul {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card-ul {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>JavaScript 20 Project</h1>
-    <ul>
-      <li><a href="exchange-rate/index.html">Exchange Rate Project</a></li>
-      <li>
-        <a href="modal-menu-slider/index.html">Menu Slider & Modal Project</a>
-      </li>
-      <li>
-        <a href="meal-finder/index.html">Meal Finder Project</a>
-      </li>
-    </ul>
+    <div>
+      <h1 class="title">JavaScript 20 Project</h1>
+      <p class="sub-title">자바스크립트로 20가지 프로젝트 만들기</p>
+      <ul class="card-ul">
+        <li>
+          <a href="exchange-rate/index.html">
+            <div class="img-container">
+              <img src="imgs/exhange-rate.PNG" alt="exchange-rate" />
+            </div>
+            <p>Exchange Rate</p>
+          </a>
+        </li>
+        <li>
+          <a href="modal-menu-slider/index.html">
+            <div class="img-container">
+              <img src="imgs/landing-page.PNG" alt="exchange-rate" />
+            </div>
+            <p>Menu Slider & Modal</p>
+          </a>
+        </li>
+        <li>
+          <a href="meal-finder/index.html">
+            <div class="img-container">
+              <img src="imgs/meal-finder.PNG" alt="exchange-rate" />
+            </div>
+            <p>Meal Finder</p>
+          </a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
