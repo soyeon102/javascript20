@@ -1,12 +1,11 @@
-## 환율 계산기
+## Exchange Rate
 
-특정 나라의 통화를 선택하고 입력한 금액의 환율 계산
-
-<br/>
+Select countries to get the exchange rate for a specific amount
 
 ## Project Specifications
 
-- 통화 선택을 위한 두 개의 select, 금액 입력 input, swap 버튼 UI 구현
-- fetch를 이용해 Open API로부터 환율 정보 가져오기 (https://api.exchangerate-api.com)
-- 금액에 따른 환율 계산
-- Swap 버튼으로 통화 변경
+- Display UI with 2 select lists for countries and 2 inputs for amounts
+- Fetch exchange rates from API (https://api.exchangerate-api.com)
+- Display the values for both countries
+- Update values on amount change
+- Swap country rates
