@@ -1,10 +1,10 @@
-## 모달 & 메뉴 슬라이더
+## Modal & Menu Slider
 
-간단한 랜딩페이지를 만들어 모달과 메뉴 슬라이더 구현
-
-<br />
+Simple landing page with sliding menu and modal
 
 ## Project Specifications
 
-- 랜딩페이지 퍼블리싱
-- 메뉴 슬라이더 및 모달 애니메이션
+- Create and style landing page
+- Style side nav and modal
+- Add functionality to make menu open/close on button click
+- Add functionality to make modal open/close on button click
